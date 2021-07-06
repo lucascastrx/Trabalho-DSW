@@ -4,4 +4,4 @@ Conforme o trabalho proposto pela matéria de Desenvolvimento de Sistemas Web (D
 
 >Figura 1: Modelo lógico do problema proposto para ser implementado
 
-![Modelo lógico](imagens/Modelagem.png)
+![Modelo lógico](imagens/modelagem.png)
