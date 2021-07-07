@@ -1,5 +1,8 @@
 package com.dsw.TrabalhoDSW.services;
-
+/**
+ * @author Lucas Teixeira
+ * @author Eduardo Buzzi
+ */
 import java.util.List;
 import java.util.Optional;
 

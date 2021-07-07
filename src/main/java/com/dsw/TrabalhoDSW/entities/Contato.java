@@ -1,5 +1,8 @@
 package com.dsw.TrabalhoDSW.entities;
-
+/**
+ * @author Lucas Teixeira
+ * @author Eduardo Buzzi
+ */
 import java.io.Serializable;
 import java.util.Objects;
 

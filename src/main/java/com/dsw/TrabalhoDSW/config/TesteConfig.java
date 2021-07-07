@@ -1,5 +1,9 @@
 package com.dsw.TrabalhoDSW.config;
 
+/**
+ * @author Lucas Teixeira
+ * @author Eduardo Buzzi
+ */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
@@ -36,12 +40,15 @@ public class TesteConfig implements CommandLineRunner {
 
         Compromisso cp1 = new Compromisso("Festa às 19h","Casa da Ju",
                 "10-06-2021",c2,u1);
+        Compromisso cp2 = new Compromisso("Festa às 21h","Casa da Maria",
+                "10-06-2021",c2,u1);
 
         //"2019-06-20T19:53:07Z"
         cd.save(c1);
         cd.save(c2);
         ud.save(u1);
         compd.save(cp1);
+        compd.save(cp2);
 		
 	}
 

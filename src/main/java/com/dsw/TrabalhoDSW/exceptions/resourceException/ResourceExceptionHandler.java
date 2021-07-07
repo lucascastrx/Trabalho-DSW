@@ -1,5 +1,8 @@
 package com.dsw.TrabalhoDSW.exceptions.resourceException;
-
+/**
+ * @author Lucas Teixeira
+ * @author Eduardo Buzzi
+ */
 import javax.servlet.http.HttpServletRequest;
 
 import org.hibernate.boot.model.relational.Database;

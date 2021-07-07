@@ -1,5 +1,8 @@
 package com.dsw.TrabalhoDSW.resources;
-
+/**
+ * @author Lucas Teixeira
+ * @author Eduardo Buzzi
+ */
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,7 +57,7 @@ public class CompromissoResource {
 		return cs.insert(c);
 	}
 	
-	@DeleteMapping
+	@DeleteMapping("/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable Integer id) {
 		cs.delete(id);

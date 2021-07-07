@@ -1,5 +1,8 @@
 package com.dsw.TrabalhoDSW.resources;
-
+/**
+ * @author Lucas Teixeira
+ * @author Eduardo Buzzi
+ */
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

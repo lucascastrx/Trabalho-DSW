@@ -1,4 +1,9 @@
 package com.dsw.TrabalhoDSW;
+/**
+ * @author Lucas Teixeira
+ * @author Eduardo Buzzi 
+ */
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

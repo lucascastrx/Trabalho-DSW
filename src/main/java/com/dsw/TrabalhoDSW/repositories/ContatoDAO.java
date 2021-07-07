@@ -1,5 +1,8 @@
 package com.dsw.TrabalhoDSW.repositories;
-
+/**
+ * @author Lucas Teixeira
+ * @author Eduardo Buzzi
+ */
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;

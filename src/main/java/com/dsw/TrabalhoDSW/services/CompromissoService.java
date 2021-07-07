@@ -1,5 +1,8 @@
 package com.dsw.TrabalhoDSW.services;
-
+/**
+ * @author Lucas Teixeira
+ * @author Eduardo Buzzi
+ */
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
