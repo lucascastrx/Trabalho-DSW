@@ -46,3 +46,7 @@ PUT | /usuarios/{id} | Atualiza um usuario especificado pelo id
 ***Obs: O arquivo application.properties está com o Profile Prod. Portanto, caso o
 repositório seja clonado o usuário deve mudar a linha [spring.profiles.active=prod](***) para [spring.profiles.active=test](***) caso
 queira utilizar com o H2 DB ou para [spring.profiles.active=dev](***) se quiser utilizar um Banco de Dados local.***
+
+###Heroku
+
+A aplicação também está disponível no Heroku e é possível fazer uso da mesma através do link  [https://agenda-trabalhodsw.herokuapp.com/]( https://agenda-trabalhodsw.herokuapp.com/)
