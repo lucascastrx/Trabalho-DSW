@@ -29,13 +29,13 @@ public class UsuarioResource {
 	
 	
 	@GetMapping
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public List<Usuario> getUsuario(){
 		return us.findAll();
 	}
 	
 	@GetMapping("/{id}")
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public Usuario findById(@PathVariable Integer id) {
 		return us.findById(id);
 	}
@@ -47,7 +47,7 @@ public class UsuarioResource {
 	}
 	
 	@DeleteMapping("/{id}")
-	@ResponseStatus(HttpStatus.NO_CONTENT)
+	@ResponseStatus(HttpStatus.OK)
 	public void delete(@PathVariable Integer id) {
 		us.delete(id);
 	}
@@ -57,21 +57,5 @@ public class UsuarioResource {
 	public Usuario update(@PathVariable Integer id, @RequestBody Usuario u) {
 		return u = us.update(id, u);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

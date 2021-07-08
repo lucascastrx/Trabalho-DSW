@@ -28,25 +28,25 @@ public class CompromissoResource {
 	private CompromissoService cs;
 	
 	@GetMapping
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public List<Compromisso> getCompromisso(){
 		return cs.findAll();
 	}
 	
 	@GetMapping("/{id}")
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public Compromisso findById(@PathVariable Integer id) {
 		return cs.findById(id);
 	}
 	
 	@GetMapping("/contato/{id}")
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public List<Compromisso> findByContatoId(@PathVariable Integer id){
 		return cs.findByContatoId(id);
 	}
 	
 	@GetMapping("/d1/{d1}/d2/{d2}")
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public List<Compromisso> findByDateInterval(@PathVariable String d1, @PathVariable String d2){
 		return cs.findByDateInterval(d1, d2);
 	}
@@ -58,7 +58,7 @@ public class CompromissoResource {
 	}
 	
 	@DeleteMapping("/{id}")
-	@ResponseStatus(HttpStatus.NO_CONTENT)
+	@ResponseStatus(HttpStatus.OK)
 	public void delete(@PathVariable Integer id) {
 		cs.delete(id);
 	}

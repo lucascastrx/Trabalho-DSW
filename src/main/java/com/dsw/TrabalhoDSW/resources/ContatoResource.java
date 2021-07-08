@@ -28,19 +28,19 @@ public class ContatoResource {
 	private ContatoService cs;
 	
 	@GetMapping
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public List<Contato> getContato(){
 		return cs.findAll();
 	}
 	
 	@GetMapping("/{id}")
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public Contato findById(@PathVariable Integer id) {
 		return cs.findById(id);
 	}
 	
 	@GetMapping("/nome/{nome}")
-	@ResponseStatus(HttpStatus.FOUND)
+	@ResponseStatus(HttpStatus.OK)
 	public List<Contato> findByName(@PathVariable String nome){
 		return cs.findByName(nome);
 	}
@@ -52,7 +52,7 @@ public class ContatoResource {
 	}
 	
 	@DeleteMapping("/{id}")
-	@ResponseStatus(HttpStatus.NO_CONTENT)
+	@ResponseStatus(HttpStatus.OK)
 	public void delete (@PathVariable Integer id) {
 		cs.delete(id);
 	}
