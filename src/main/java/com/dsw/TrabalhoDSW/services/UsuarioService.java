@@ -64,8 +64,7 @@ public class UsuarioService {
 		
 	}
 
-	public Usuario getLogin(String user, String pw) {
-		
-		return ud.findByUsernameAndSenha(user, pw);
+	public Boolean getLogin(Usuario u) {
+		return ud.findByUsernameAndSenha(u.getUsername(), u.getSenha()) != null;
 	}
 }

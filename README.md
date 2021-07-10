@@ -40,7 +40,7 @@ GET | /usuarios/{id} | Retorna um usuario especificado pelo id
 POST | /usuarios |  Insere um usuario no banco
 DELETE | /usuarios/{id} | Deleta um usuario especificado pelo id
 PUT | /usuarios/{id} | Atualiza um usuario especificado pelo id
-
+POST | /usuarios/login | Retorna um Boolean positivo se username/password no body corresponde com o registro no banco.
 
 
 ***Obs: O arquivo application.properties está com o Profile Prod. Portanto, caso o

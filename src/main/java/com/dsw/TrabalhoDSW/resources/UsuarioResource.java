@@ -40,10 +40,10 @@ public class UsuarioResource {
 		return us.findById(id);
 	}
 	
-	@GetMapping("/user/{user}/pw/{pw}")
+	@PostMapping("/login")
 	@ResponseStatus(HttpStatus.OK)
-	public Usuario getLogin(@PathVariable String user, @PathVariable String pw) {
-		return us.getLogin(user,pw);
+	public Boolean getLogin(@RequestBody Usuario u) {
+		return us.getLogin(u);
 	}
 	
 	@PostMapping
