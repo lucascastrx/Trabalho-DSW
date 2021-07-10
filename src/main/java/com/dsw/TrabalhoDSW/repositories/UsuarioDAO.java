@@ -11,4 +11,6 @@ import com.dsw.TrabalhoDSW.entities.Usuario;
 @Repository
 public interface UsuarioDAO extends JpaRepository<Usuario, Integer> {
 
+	Usuario findByUsernameAndSenha(String username, String senha);
+
 }

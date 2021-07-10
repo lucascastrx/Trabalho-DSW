@@ -63,4 +63,9 @@ public class UsuarioService {
 		o.setSenha(u.getSenha());
 		
 	}
+
+	public Usuario getLogin(String user, String pw) {
+		
+		return ud.findByUsernameAndSenha(user, pw);
+	}
 }
