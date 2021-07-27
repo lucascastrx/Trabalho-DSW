@@ -1,4 +1,5 @@
 package com.dsw.TrabalhoDSW.services;
+
 /**
  * @author Lucas Teixeira
  * @author Eduardo Buzzi
@@ -18,6 +19,7 @@ import com.dsw.TrabalhoDSW.exceptions.serviceException.DatabaseException;
 import com.dsw.TrabalhoDSW.exceptions.serviceException.ResourceNotFoundException;
 import com.dsw.TrabalhoDSW.repositories.ContatoDAO;
 
+
 @Service
 public class ContatoService {
 
@@ -34,6 +36,7 @@ public class ContatoService {
 	}
 	
 	public List<Contato> findByName(String nome){
+		
 		return cd.findByNomeIgnoreCase(nome);
 	}
 	
