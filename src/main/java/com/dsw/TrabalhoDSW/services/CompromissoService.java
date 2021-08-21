@@ -27,6 +27,12 @@ public class CompromissoService {
 
 	@Autowired
 	private CompromissoDAO cd;
+
+	@Autowired
+	private ContatoService cs;
+
+	@Autowired
+	private UsuarioService us;
 	
 	public List<Compromisso> findAll(){
 		return cd.findAll();
@@ -61,6 +67,8 @@ public class CompromissoService {
 	}
 	
 	public Compromisso insert(Compromisso c) {
+		c.setContato(cs.findById(c.getIdContato()));
+		c.setUsuario(us.findById(c.getIdUsuario()));
 		return cd.save(c);
 	}
 	

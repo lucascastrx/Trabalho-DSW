@@ -25,6 +25,9 @@ public class ContatoService {
 
 	@Autowired
 	private ContatoDAO cd;
+
+	@Autowired
+	UsuarioService us;
 	
 	public List<Contato> findAll(){
 		return cd.findAll();
@@ -41,6 +44,8 @@ public class ContatoService {
 	}
 	
 	public Contato inserir(Contato c) {
+		System.out.println("USUARIO: " + us.findById(c.getIdUsuario()));
+		c.setUsuario(us.findById(c.getIdUsuario()));
 		return cd.save(c);
 	}
 	

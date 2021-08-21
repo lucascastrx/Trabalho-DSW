@@ -24,6 +24,7 @@ public class Contato implements Serializable{
 	private String nome;
 	private String fone;
 	private String email;
+	private int idUsuario;
 	
 	@ManyToOne
 	@JoinColumn(name = "usuario_id")
@@ -34,11 +35,11 @@ public class Contato implements Serializable{
 	}
 
 
-	public Contato(String nome, String fone, String email, Usuario usuario) {
+	public Contato(String nome, String fone, String email, int idUsuario) {
 		this.nome = nome;
 		this.fone = fone;
 		this.email = email;
-		this.usuario = usuario;
+		this.idUsuario = idUsuario;
 	}
 
 
@@ -91,6 +92,13 @@ public class Contato implements Serializable{
 		this.usuario = usuario;
 	}
 
+	public int getIdUsuario() {
+		return idUsuario;
+	}
+
+	public void setIdUsuario(int idUsuario) {
+		this.idUsuario = idUsuario;
+	}
 
 	@Override
 	public int hashCode() {

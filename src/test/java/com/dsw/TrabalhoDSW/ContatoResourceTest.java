@@ -30,7 +30,7 @@ public class ContatoResourceTest {
 	
 	@Test
 	public void contatoTestInsert() throws Exception {
-		Contato c1 = new Contato("Jessik","123","jessik@gmail.com", null);
+		Contato c1 = new Contato("Jessik","123","jessik@gmail.com", 1);
 		
 		mockMvc.perform(post("/contatos")
 			   .contentType("application/json")

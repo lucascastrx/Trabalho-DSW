@@ -48,6 +48,7 @@ public class ContatoResource {
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Contato insert(@RequestBody Contato c) {
+
 		return cs.inserir(c);
 	}
 	

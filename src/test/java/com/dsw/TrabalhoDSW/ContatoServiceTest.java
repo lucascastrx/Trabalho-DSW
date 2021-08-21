@@ -38,7 +38,7 @@ public class ContatoServiceTest {
 	@Test
 	public void contatoTestServiceFindById() {
 		int id = 1;
-		Contato c1 = new Contato("Lucas","123","lucas@gmail.com", null);
+		Contato c1 = new Contato("Lucas","123","lucas@gmail.com", 1);
 		c1.setId(1);
 		Contato contatos = contatoService.findById(id);
 		
@@ -47,7 +47,7 @@ public class ContatoServiceTest {
 	
 	@BeforeEach
 	public void setup() {
-		Contato c1 = new Contato("Lucas","123","lucas@gmail.com", null);
+		Contato c1 = new Contato("Lucas","123","lucas@gmail.com", 1);
 		c1.setId(1);
 		
 		Mockito.when(cd.findById(c1.getId())).thenReturn(java.util.Optional.of(c1));

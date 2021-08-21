@@ -30,7 +30,9 @@ public class Compromisso implements Serializable {
 	
 	private String descricao;
 	private String local;
-	
+	private  int idContato;
+	private  int idUsuario;
+
 	@Temporal(TemporalType.DATE)
 	private Date data;
 	
@@ -50,12 +52,12 @@ public class Compromisso implements Serializable {
 	}
 
 
-	public Compromisso(String descricao, String local, String data, Contato contato, Usuario usuario) throws ParseException {
+	public Compromisso(String descricao, String local, String data, int idContato, int idUsuario) throws ParseException {
 		this.descricao = descricao;
 		this.local = local;
 		this.data = DATE_FORMAT.parse(data);
-		this.contato = contato;
-		this.usuario = usuario;
+		this.idContato = idContato;
+		this.idUsuario = idUsuario;
 	}
 
 
@@ -118,6 +120,21 @@ public class Compromisso implements Serializable {
 		this.usuario = usuario;
 	}
 
+	public int getIdContato() {
+		return idContato;
+	}
+
+	public void setIdContato(int idContato) {
+		this.idContato = idContato;
+	}
+
+	public int getIdUsuario() {
+		return idUsuario;
+	}
+
+	public void setIdUsuario(int idUsuario) {
+		this.idUsuario = idUsuario;
+	}
 
 	@Override
 	public int hashCode() {
